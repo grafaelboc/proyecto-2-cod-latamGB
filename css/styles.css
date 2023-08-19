@@ -1,0 +1,469 @@
+/*Mobile*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+*     {
+    box-sizing : border-box;
+    margin : 0;
+    padding : 0;
+    scroll-behavior : smooth;
+  }
+/*Modo claro*/
+    body {
+    font-family: 'Lato', sans-serif;
+    font-size : 18px;
+    line-height : 1.2;
+    background-color: rgb(8, 163, 150);
+    background-image : url(https://i.pinimg.com/564x/6f/4c/5c/6f4c5c27ba30aaad59f2fb4d99928ab7.jpg);
+    background-repeat: round;
+    background-size: cover;
+    }
+    header {
+    display : flex;
+    justify-content : space-between;
+    align-items: center;
+    background-color : #7dceaf81;
+   
+    box-shadow : 0px 25px 25px rgb(132, 215, 221);
+    margin : auto;
+    font-size : 20px;
+    width : 100%;
+    height : 50px;
+    }
+
+    a {
+    text-decoration : none;
+    color : inherit;
+    }
+   
+    /*MenuNav*/
+    :root {
+    --blue-dark: #334dcf;
+       
+    }
+  
+    html {
+    font-size: 30%;
+    }
+   label{
+    background-color: transparent;
+   }
+    /*botonHamburguesa*/
+
+    #menu-boton {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    width: 45px;
+    
+    }
+    #botonMD{
+      float: right;
+      margin-right: 0.7%;
+
+      }
+    #logoGB{
+    border-radius: 50%;
+    }  
+    li.menu-item {
+    color: #01060a;
+    font-size: 3rem;
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    }
+ 
+    li.menu-item:after {
+    content: 'Seleccionar';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0px;
+    background-color: var(--blue-dark);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    font-size: small;
+
+    }
+  
+    li.menu-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom right;  
+    }
+ 
+    img#close-menu{
+    display: none;
+    
+    }
+
+    nav{
+    display: none;
+
+    }
+
+    /*Inicio*/
+
+    #inicio {
+      display : flex;
+      flex-direction : column;
+      text-align : center;
+      opacity : 0.9;
+      padding : 20px;
+      background-size: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      color: #01060a;
+      }
+   
+
+   #botonRetorno{
+       float: inline-start;
+       
+   }
+  /*inicia modo mmobile*/
+
+    body.mobile-menu-active img#close-menu {
+    display: block;
+  
+    }
+    body.mobile-menu-active img#open-menu {
+    display : none;
+    
+    }
+    body.mobile-menu-active header {
+    height : 20vh;
+    flex-wrap : wrap;
+    align-items: flex-start;
+    transition : height 0.3s;
+    margin: auto;
+          
+    }
+    body.mobile-menu-active nav {
+    display: inline-block;
+    text-align: center;
+    width : 100%;
+    height : 20%;
+    
+    }
+    body.mobile-menu-active ul#menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height : 100%;
+
+    }
+  
+    h1 {
+      background-color: transparent;
+      border-radius: 25px;
+      font-family: 'Lato', sans-serif;     
+      text-align : center;
+      line-height : 1.5;
+      color: #070202;
+     
+      }
+    p {
+      background-color: transparent;
+      border-radius: 25px;
+      font-family: 'Lato', sans-serif;
+      color: #070202;
+      margin : 0;
+      padding : 0;
+      text-align : center;
+      line-height : 1.5;
+    }
+    #contacto {
+      color: #070202;
+      background-color : rgba(8, 156, 124, 0.13);
+      box-shadow : 5px 5px rgba(5, 146, 134, 0.51); 
+      margin : 50px;
+      padding : 20px;
+      text-align : center;
+      border-radius : 20px;
+    }
+    #contacto2 {
+      color: #070202;
+      background-color : rgba(8, 156, 124, 0.13);
+      box-shadow : 5px 5px rgba(5, 146, 134, 0.51); 
+      margin : 50px;
+      padding : 20px;
+      text-align : center;
+      border-radius : 20px;
+      }
+    #contacto3 {
+      color: #070202;
+      background-color : rgba(8, 156, 124, 0.13);
+      box-shadow : 5px 5px rgba(5, 146, 134, 0.51); 
+      margin : 50px;
+      padding : 20px;
+      text-align : center;
+      border-radius : 20px;
+        }
+    /*Termina Modo Mobile*/
+   /*----------------------------*/
+    /*Foto GB*/
+
+    .FotoGB {
+    width: 70%;
+    border:5px solid #aaf1dc9d;
+    display : flex;
+    border-radius : 20%;
+    box-shadow : 5px 15px 15px rgba(132, 188, 221, 0.493);
+    display: block;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    }
+  
+    div.Micv {
+      text-align: center;
+      background-color: rgba(9, 63, 49, 0.432);
+      color : rgb(1, 15, 9);
+      box-shadow : 0 0 5px 5px rgba(5, 146, 134, 0.51); 
+      padding : 15px;
+      margin: 0;
+      border: none;
+      border-radius : 20px;
+      margin-bottom: 20px;
+      margin-top: auto;
+      display: block;
+      
+    }
+    div.Micv :hover {
+    background-color: rgba(9, 63, 49, 0);
+    color : rgb(19, 1, 10);
+    font : bold;
+    transition : background-color 0.3s;
+    
+    }
+         
+    .iconos {
+    background-color: #204e3f44;
+    display: flex;
+    justify-content: space-evenly;   
+    margin-top: 25px;
+    margin-block-end: 25px;
+    }
+    .iconos2 {
+    display: flex;
+    justify-content: space-evenly;   
+    margin-top: 25px;
+    margin-block-end: 25px;
+ 
+   
+    }
+    li.iconos2 {
+    margin-top: 25px;
+    margin-block-end: 25px;
+    width : 100px;
+    padding : 20px; 
+    background-color: transparent;
+    
+    }
+    li.iconos {
+    margin-top: 25px;
+    margin-block-end: 25px;
+    width : 100px;
+    padding : 20px; 
+    box-shadow : 0 0 10px 10px rgba(5, 146, 134, 0.51);
+        }
+
+    a {
+    text-decoration : none;
+    color : inherit;
+    }
+    main {
+    max-width : 100%;
+    margin : auto;
+    }
+
+   /*Inicia ModoPc Claro*/
+
+   @media(min-width : 1024px) 
+ 
+   {
+   .imagen {
+    width : 1000%;
+    max-width : 800px;
+   }
+   h1 {
+    font-size : 48px;
+    color : rgb(10, 42, 170);
+    }
+    h2 {
+    font-size: 38px;
+    color :  rgb(10, 42, 170);
+  }
+    h3 {
+    font-size: 24px;
+    color : rgb(10, 42, 170);
+    }
+    h4 {
+      font-size: 16px;
+      color : rgb(10, 42, 170);
+    }
+    u{
+      font-size: 32px;
+      color : rgb(10, 42, 170);
+    }
+    p {
+      color : rgb(10, 42, 170);
+    }
+    li {
+      color : rgb(10, 42, 170);
+    }
+    section#inicio { 
+    flex-direction: row;
+    justify-content : center;
+    padding : 5%;
+    }
+
+    .presentacion {
+    width : 60%;
+    }
+
+    #contacto{
+    margin: 50px 300px;
+    }
+    .Quién-soy{
+    width: 40%;
+    }
+    #open-menu {
+    display : none;
+    }
+    nav {
+    display : block;
+    justify-content : flex-end;
+    }
+
+    .Micv {
+    display:flex;
+    flex-direction: column;
+    background-color : #17a1a188;
+    margin : 0;
+    padding : 20%;
+    border-radius : 20px;
+    color : rgb(240, 244, 245);
+    width: 40%;
+    }
+    /*FooterGB*/
+
+    .footer {
+    background-color : transparent;
+    text-align : center;
+    }
+}
+
+/*Termina modo pc claro*/
+
+/*inicia Modo Oscuro*/
+
+  body.modoOscuro {
+  background-color: rgba(73, 166, 182, 0.459);
+  background-image: url(https://www.todofondos.net/wp-content/uploads/cool-honeycomb-iphone-6-plus-fondo-de-pantalla-25833-3d-iphone-6-plus-576x1024.jpg);
+  background-repeat: round;
+  }
+
+  body.modoOscuro header {
+    background-color: rgba(73, 166, 182, 0.459);
+    color : rgb(240, 244, 245);
+    box-shadow : 0px 25px 25px rgba(67, 162, 179, 0.733);
+   
+    }
+  body.modoOscuro :root {
+    --blue-dark: #7e968d;
+    
+    }
+  body.modoOscuro li.menu-item {
+    color : rgb(240, 244, 245);
+      
+    }
+    body.modoOscuro #menu-boton {
+      filter: invert(50%);
+    }
+    body.modoOscuro #botonMD {
+      float: right;
+      margin-right: 0.7%;
+      filter: invert(50%);
+    }  
+     
+  body.modoOscuro div.Micv {
+      background-color: rgba(9, 63, 49, 0.219);
+      color : rgb(240, 244, 245);
+    }
+  body.modoOscuro div.Micv :hover {
+      background-color: rgba(9, 63, 49, 0.007);
+      color : rgb(240, 244, 245);
+    }
+    
+  body.modoOscuro #contacto{
+      background-color: #2b3d364b;
+  }
+  /*parrafos*/
+  body.modoOscuro p{
+    margin: auto;
+    color : rgb(240, 244, 245);
+}
+    /*Textos*/
+  body.modoOscuro h1 {
+    color : rgb(240, 244, 245);
+      background-color: #2b3d3600;      
+    }
+    body.modoOscuro h2 {
+      color : rgb(240, 244, 245);
+        background-color: #2b3d3600;
+    }
+    body.modoOscuro h3 {
+      color : rgb(240, 244, 245);
+        background-color: #2b3d3600;
+    }
+    body.modoOscuro h4 {
+      color : rgb(240, 244, 245);
+        background-color: #2b3d3600;
+    }
+    body.modoOscuro u {
+      color : rgb(240, 244, 245);
+        background-color: #2b3d3600;
+    }
+    body.modoOscuro ul {
+      color : rgb(240, 244, 245);
+        background-color: #2b3d3600;
+    }
+    body.modoOscuro li {
+      color : rgb(240, 244, 245);
+        background-color: #2b3d3600;
+    }
+  body.modoOscuro #contacto {
+    color : rgb(240, 244, 245);
+    background-color: #2b3d3652;
+   }
+  body.modoOscuro .hablemos {
+    color : rgb(240, 244, 245);
+       
+    }
+
+    body.modoOscuro .iconos2 {
+      filter: invert(50%);
+      
+    }
+
+  body.modoOscuro .footer {
+    color : rgb(240, 244, 245);
+         
+    }
+    body.modoOscuro #botonRetorno {     
+      background-color: #569187d3;  
+      border-radius: 100px;
+      box-shadow : 0px 25px 25px rgba(67, 162, 179, 0.733);
+   
+    }
+      /*Termina Modo oscuro*/
