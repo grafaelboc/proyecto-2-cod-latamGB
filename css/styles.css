@@ -256,14 +256,14 @@
     .iconos2 {
     display: flex;
     justify-content: space-evenly;   
-    margin-top: 25px;
-    margin-block-end: 25px;
+    margin-top: 20px;
+    margin-block-end: 20px;
  
    
     }
     li.iconos2 {
-    margin-top: 25px;
-    margin-block-end: 25px;
+    margin-top: 20px;
+    margin-block-end: 20px;
     width : 100px;
     padding : 20px; 
     background-color: transparent;
