@@ -370,7 +370,7 @@
 
   body.modoOscuro {
   background-color: rgba(73, 166, 182, 0.459);
-  background-image: url(https://www.todofondos.net/wp-content/uploads/cool-honeycomb-iphone-6-plus-fondo-de-pantalla-25833-3d-iphone-6-plus-576x1024.jpg);
+  background-image: url(https://www.todofondos.net/wp-content/uploads/1920x1080-Fondo-de-pantalla-de-gradiente-oscuro-26038-1920x1080-PX-768x432.jpg);
   background-repeat: round;
   }
 
@@ -395,6 +395,7 @@
       float: right;
       margin-right: 0.7%;
       filter: invert(50%);
+      transform: scaleX(-1);
     }  
      
   body.modoOscuro div.Micv {
